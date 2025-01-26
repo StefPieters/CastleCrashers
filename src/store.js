@@ -43,7 +43,7 @@ export const useGameStore = create((set, get) => ({
     setDebugMode: () => set({ debugMode: !get().debugMode }),
     upDifficulty: (newDifficulty) => {
          set({ difficulty: newDifficulty });
-        console.log('difficulty', get().difficulty);
+        //console.log('difficulty', get().difficulty);
     },
     goSettingScreen: () => {
         set(() => ({
@@ -51,7 +51,7 @@ export const useGameStore = create((set, get) => ({
         }));
     },
     startGame: () => {
-        console.log('start game');
+        //console.log('start game');
         set(() => ({
             speed: 0.2, //0.2 CHANGE THIS TO 0.2
             difficulty: 0,
@@ -59,7 +59,7 @@ export const useGameStore = create((set, get) => ({
         }));
     },
     endGame: () => {
-        console.log('end game');
+        //console.log('end game');
         set(() => ({
             speed: 0,
             difficulty: 0,
@@ -91,7 +91,7 @@ export const useGameStore = create((set, get) => ({
             difficulty: 0,
             gameState: 'playagain',
             }));
-            console.log('reset stats', get().gameState);
+            //console.log('reset stats', get().gameState);
     },
     backToMenu: () => {
         set(() => ({
@@ -122,7 +122,7 @@ export const useGameStore = create((set, get) => ({
     setGameAction: (newAction) => {
         
         if (get().action !== newAction) {
-            console.log('action performed in store', newAction);
+            //console.log('action performed in store', newAction);
             set({ action: newAction });
         }
     },

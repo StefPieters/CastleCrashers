@@ -87,7 +87,7 @@ export function Player() {
               playAudio('crouch.mp3')
               setIsCrouching(true)
               const crouchDuration = 1200 - 600 * ((speed - 0.1) / 1.9) // Adjust crouch duration based on speed
-              console.log('Crouching for', crouchDuration, 'ms')
+              //console.log('Crouching for', crouchDuration, 'ms')
               let crouchStart = null
               const animateCrouch = (timestamp) => {
                 if (!crouchStart) crouchStart = timestamp
@@ -133,7 +133,7 @@ export function Player() {
       playAudio('crouch.mp3')
       setIsCrouching(true)
       const crouchDuration = 1200 - 600 * ((speed - 0.1) / 1.9) // Adjust crouch duration based on speed
-      console.log('Crouching for', crouchDuration, 'ms')
+      //console.log('Crouching for', crouchDuration, 'ms')
       let crouchStart = null
       const animateCrouch = (timestamp) => {
         if (!crouchStart) crouchStart = timestamp
@@ -270,19 +270,19 @@ export function Player() {
     playAudio('gemCollection.mp3')
     switch (gemType) {
       case 'green':
-        console.log('Green gem collected!')
+        //console.log('Green gem collected!')
         setCoins(coins + 25)
         break
       case 'yellow':
-        console.log('Yellow gem collected!')
+        //console.log('Yellow gem collected!')
         setCoins(coins + 50)
         break
       case 'blue':
-        console.log('Blue gem collected!')
+        //console.log('Blue gem collected!')
         setCoins(coins + 75)
         break
       case 'red':
-        console.log('Red gem collected!')
+        //console.log('Red gem collected!')
         setCoins(coins + 100)
         break
       default:
@@ -300,11 +300,11 @@ export function Player() {
         name="player" // Add name for collision detection
         onIntersectionEnter={({ other }) => {
           if (other.colliderObject.name === 'coin') {
-            console.log('Coin collected!')
+            //console.log('Coin collected!')
             handleCoinCollection();
           }
           if (other.colliderObject.name === 'obstacle') {
-            console.log('Player hit an obstacle!')
+            //console.log('Player hit an obstacle!')
             handlePlayerDied();
           }
           if (other.colliderObject.name.includes('gem')) {

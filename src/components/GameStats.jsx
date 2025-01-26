@@ -34,7 +34,7 @@ export function GameStats() {
 
       if (gameState === 'endgame') {
         // Safely update the store using the ref
-        console.log('Restarting game')
+        //console.log('Restarting game')
         setDistanceStore(distanceRef.current)
         setDistance(0) // Reset local state
         upDifficulty(0)

@@ -120,7 +120,7 @@ const PoseNetCanvas = () => {
         noseX < videoWidth / 3 ? 2 : noseX < (2 * videoWidth) / 3 ? 1 : 0
       if (newPose !== useGameStore.getState().pose) {
         setPose(newPose)
-        console.log(`Lane changed to: ${newPose}`)
+        //console.log(`Lane changed to: ${newPose}`)
       }
 
       // Determine the current action based on Y position
@@ -133,18 +133,18 @@ const PoseNetCanvas = () => {
         currentAction = 'Neutral'
       } else {
         // In neutral zone
-        console.log('Checking Neutral zone')
+        //console.log('Checking Neutral zone')
         if (actionLocked) {
           setActionLocked(false)
           setGameAction(null)
-          console.log('Reset - ready for new action')
+          //console.log('Reset - ready for new action')
         }
         return
       }
 
       // Only log the action if it's different from the current action and not locked
       if (currentAction !== useGameStore.getState().action && !actionLocked) {
-        console.log(`Action performed: ${currentAction}`)
+        //console.log(`Action performed: ${currentAction}`)
         setGameAction(currentAction)
         setActionLocked(true)
       }

@@ -119,7 +119,7 @@ const HandPoseCanvas = () => {
           x < videoWidth / 3 ? 2 : x < (2 * videoWidth) / 3 ? 1 : 0;
         if (newPose !== useGameStore.getState().pose) {
           setPose(newPose);
-          console.log(`Lane changed to: ${newPose}`);
+        //console.log(`Lane changed to: ${newPose}`);
         }
 
         // Determine the current action based on Y position
@@ -134,7 +134,7 @@ const HandPoseCanvas = () => {
 
         // Only log the action if it's different from the current action and not locked
         if (currentAction !== useGameStore.getState().action && !actionLocked) {
-          console.log(`Action performed: ${currentAction}`);
+          //console.log(`Action performed: ${currentAction}`);
           setGameAction(currentAction);
           setActionLocked(true);
         }
