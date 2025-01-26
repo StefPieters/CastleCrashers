@@ -107,7 +107,7 @@ const HandPoseCanvas = () => {
         const [x, y] = palmBase;
 
         ctx.beginPath();
-        ctx.arc(x, y, 10, 0, 2 * Math.PI);
+        ctx.arc(x, y, 20, 0, 2 * Math.PI);
         ctx.fillStyle = 'rgba(255, 154, 0, 0.8)';
         ctx.fill();
 
