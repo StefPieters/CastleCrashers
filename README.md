@@ -1,13 +1,28 @@
-# React + Vite
+# Castle Crashers
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+Castle Crashers is a fun and engaging game where you can endlessly run in a castle that has obstacles that get progressively harder to dodge.
 
-Currently, two official plugins are available:
+## How to See Stats
+Press `M` or `m`to view debug mode in the game.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+To install the project dependencies, run the following command:
+```sh
+npm install --force
+```
 
+## Running the Project
+To run the project locally, use the following command:
+```sh
+npm run dev
+```
 
-TODO: RequestAnimationFrame
-TODO: Stats (FPS etc) tonen als je op M drukt ofzo
-TODO: Op reddit posten
+## Building the Project
+To build the project for production, use the following command:
+```sh
+npm run build
+```
+
+## Online Version
+You can also play the game online at [Castle Crashers Online](https://castlecrashers.netlify.app)
