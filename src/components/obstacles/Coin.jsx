@@ -2,7 +2,9 @@ import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 
-export function Coin({ positionMesh, scaleMesh}) {
+useGLTF.preload('/assets/obstacles/coin.gltf')
+
+export function Coin({ positionMesh, scaleMesh }) {
   const { scene, materials } = useGLTF('/assets/obstacles/coin.gltf', true)
   const coinRef = useRef()
 

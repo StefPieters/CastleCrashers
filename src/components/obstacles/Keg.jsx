@@ -1,6 +1,11 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef, useState } from 'react'
 
+useGLTF.preload('/assets/obstacles/keg_decorated.gltf')
+useGLTF.preload('/assets/obstacles/barrel_large.gltf')
+useGLTF.preload('/assets/obstacles/barrel_large_decorated.gltf')
+useGLTF.preload('/assets/obstacles/keg.gltf')
+
 export function Keg({ positionMesh, rotationMesh, scaleMesh = [2, 2, 2], type }) {
   const gltfFiles = {
     keg_decorated: '/assets/obstacles/keg_decorated.gltf',

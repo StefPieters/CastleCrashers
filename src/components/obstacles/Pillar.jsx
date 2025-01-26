@@ -1,6 +1,8 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 
+useGLTF.preload('/assets/obstacles/pillar.gltf')
+
 export function Pillar({ positionMesh, rotationMesh, scaleMesh = [3, 3, 3] }) {
   const { scene, materials } = useGLTF('/assets/obstacles/pillar.gltf', true)
   const pillarRef = useRef()

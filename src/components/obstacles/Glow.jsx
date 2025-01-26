@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { MeshBasicMaterial } from 'three'
 
+useGLTF.preload('/assets/obstacles/Glow.glb')
+
 export function Glow({ position, scale, color, mirrorSpin }) {
   const { scene } = useGLTF('/assets/obstacles/Glow.glb', true)
   const glowRef = useRef()

@@ -2,6 +2,11 @@ import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 import { useEffect, useState } from 'react'
 
+useGLTF.preload('/assets/obstacles/table_medium_decorated_A.gltf')
+useGLTF.preload('/assets/obstacles/table_medium_tablecloth.gltf')
+useGLTF.preload('/assets/obstacles/table_medium_tablecloth_decorated_B.gltf')
+useGLTF.preload('/assets/obstacles/table_medium.gltf')
+
 export function TableSmall({ positionMesh, rotationMesh, scaleMesh = [2, 2, 2] }) {
   const gltfFiles = [
     '/assets/obstacles/table_medium_decorated_A.gltf',

@@ -1,6 +1,8 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 
+useGLTF.preload('/assets/obstacles/column.gltf')
+
 export function Column({ positionMesh, rotationMesh, scaleMesh = [2, 4, 2] }) {
   const { scene, materials } = useGLTF('/assets/obstacles/column.gltf', true)
   const columnRef = useRef()

@@ -1,6 +1,11 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef, useState} from 'react'
 
+useGLTF.preload('/assets/obstacles/table_long.gltf')
+useGLTF.preload('/assets/obstacles/table_long_tablecloth.gltf')
+useGLTF.preload('/assets/obstacles/table_long_tablecloth_decorated_A.gltf')
+useGLTF.preload('/assets/obstacles/table_long_decorated_C.gltf')
+
 export function TableLong({ positionMesh, rotationMesh, scaleMesh = [2, 2, 2], type }) {
   const gltfFiles = {
     table: '/assets/obstacles/table_long.gltf',

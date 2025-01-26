@@ -1,6 +1,8 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 
+useGLTF.preload('/assets/obstacles/rubble_large.gltf')
+
 export function Rubble({ positionMesh, rotationMesh, scaleMesh = [2, 2, 2] }) {
   const { scene, materials } = useGLTF('/assets/obstacles/rubble_large.gltf', true)
   const rubbleRef = useRef()

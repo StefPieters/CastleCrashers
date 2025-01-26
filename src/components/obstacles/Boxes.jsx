@@ -1,6 +1,10 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef, useState } from 'react'
 
+useGLTF.preload('/assets/obstacles/box_stacked.gltf')
+useGLTF.preload('/assets/obstacles/crates_stacked.gltf')
+useGLTF.preload('/assets/obstacles/bed_decorated.gltf')
+
 export function Boxes({ positionMesh, rotationMesh, scaleMesh = [2, 2, 2], type }) {
   const gltfFiles = {
     box_stacked: '/assets/obstacles/box_stacked.gltf',

@@ -1,6 +1,8 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 
+useGLTF.preload('/assets/obstacles/floor_tile_big_spikes.gltf')
+
 export function Spikes({ positionMesh, rotationMesh, scaleMesh = [1.7, 1.7, 1.7] }) {
   const { scene, materials } = useGLTF(
     '/assets/obstacles/floor_tile_big_spikes.gltf',

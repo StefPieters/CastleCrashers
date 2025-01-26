@@ -3,6 +3,8 @@ import React, { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Glow } from './Glow'
 
+useGLTF.preload('/assets/obstacles/GreenGem.glb')
+
 export function GreenGem({ positionMesh, scaleMesh}) {
   const { scene } = useGLTF('/assets/obstacles/GreenGem.glb', true)
   const greenGemRef = useRef()

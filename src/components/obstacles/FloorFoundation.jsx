@@ -1,6 +1,8 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 
+useGLTF.preload('/assets/obstacles/floor_foundation_front.gltf')
+
 export function FloorFoundation({ positionMesh, rotationMesh, scaleMesh = [2, 2, 2] }) {
   const { scene, materials } = useGLTF(
     '/assets/obstacles/floor_foundation_front.gltf',

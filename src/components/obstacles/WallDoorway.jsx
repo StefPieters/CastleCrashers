@@ -1,6 +1,8 @@
 import { useGLTF } from '@react-three/drei'
 import React, { useRef } from 'react'
 
+useGLTF.preload('/assets/obstacles/wall_doorway.gltf')
+
 export function WallDoorway({ positionMesh, rotationMesh, scaleMesh }) {
   const { scene, materials } = useGLTF('/assets/obstacles/wall_doorway.gltf', true)
   const WallDoorwayRef = useRef()
