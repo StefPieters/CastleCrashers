@@ -24,5 +24,8 @@ To build the project for production, use the following command:
 npm run build
 ```
 
+## Assets
+I used free assets from [KayKit GameAssets](https://kaylousberg.itch.io) and making my own in blender
+
 ## Online Version
 You can also play the game online at [Castle Crashers Online](https://castlecrashers.netlify.app)
