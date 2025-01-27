@@ -55,7 +55,7 @@ export const Character = ({ isCrouching, isJumping }) => {
         ),
       }
 
-      actionsRef.current.Running_A.timeScale = 8 // Increase the speed of the Running_A animation
+      actionsRef.current.Running_A.timeScale = 14 // Increase the speed of the Running_A animation
       actionsRef.current.Running_A.play()
       actionsRef.current.Jump.timeScale = 2 // Increase the speed of the Jump animation
       actionsRef.current.Lie_Down.timeScale = 15 // Increase the speed of the Lie_Down animation
